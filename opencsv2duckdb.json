@@ -1,0 +1,43 @@
+{
+    "_": "n",
+    "cells": {
+        "A1": {
+            "value": "export.txt",
+            "key": "A1",
+            "style": {
+                "color": "",
+                "font-size": "",
+                "font-style": "",
+                "vertical-align": "",
+                "font-weight": "",
+                "background-color": ""
+            },
+            "s": "=\nimport duckdb\nimport io\nimport urllib\nimport os.path\n\nurl = 'https://raw.githubusercontent.com/JoseTaborda/Public/refs/heads/main/california_housing_test.csv'\nweights_csv = io.BytesIO(urllib.request.urlopen(url).read())\n\nweights_relation = duckdb.read_csv(weights_csv)\nmydata = duckdb.sql(\"SELECT * FROM weights_relation\").df()\n\nmypath = 'C:/MyApps/PyScript/'\nmyfile = 'export.txt'\n\n\n#os.chdir(mypath)\n\n\n\n\n\n\n"
+        }
+    },
+    "previews": {
+        "A1": {
+            "html": "<div>\n        <div style='color:red;padding:8px;'>\n            Error: Cannot generate a preview for\n            result of type &lt;NoneType&gt;\n        <div></div>",
+            "left": "173.172px",
+            "top": "98px",
+            "width": "509.5px",
+            "height": "583px",
+            "key": "A1"
+        }
+    },
+    "created_timestamp": 0,
+    "updated_timestamp": 0,
+    "rows": {
+        "1": 70
+    },
+    "columns": {
+        "1": 231
+    },
+    "row_count": 65,
+    "column_count": 26,
+    "screenshot": "",
+    "packages": "duckdb fsspec",
+    "selected": "A1",
+    "uid": "18574ed7-adf1-4201-ab0f-28f005658687",
+    "name": "OpenCSV2DuckDB"
+}
