@@ -1,4 +1,4 @@
-Timestamp,Data,Hora_,Dia,Mês,Ano,Hora,Minuto,Segundo,Duração,Semana,Dia_semana,Nome_mês
+Timestamp,Date,Time,Day,Month,Year,Hour,Minute,Second,Duration,Week_number,Week_day,Month_name
 1625337996,03/07/2021,18:46:36,3,7,2021,18,46,36,11,27,7,Jul
 1625341625,03/07/2021,19:47:05,3,7,2021,19,47,5,38,27,7,Jul
 1625403621,04/07/2021,13:00:21,4,7,2021,13,0,21,37,28,1,Jul
